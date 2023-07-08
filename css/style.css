@@ -25,18 +25,19 @@ header{
             margin: 0 auto;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-around
 }
         .menu img{
             width: 100px;
             height: 80px;
-            float: left;
+            
             padding: 10px;
         }
         .logo{
             padding: 20px 20px;
             height: 15xp;
             width: 15px;
+            justify-content: left;
 }
 nav{
             display: flex;
@@ -260,19 +261,30 @@ h2 {
 .cajasContacto {
     background-color: rgb(154, 147, 147);
     display: flex;
+    max-width: 450px;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-around;
     margin: 10px;
     padding: 10px; 
 }
-@media (max-width: 1200px){
+@media (max-width: 1000px){
     .contactoyFormulario{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
     }
+}
+.cajaMapa {
+    padding: 10px;
+    margin: 10px;
+    width: 90%;
+    max-width: 500px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 
