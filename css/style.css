@@ -1,0 +1,320 @@
+/*                            NAVEGADOR CSS                     */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to bottom, #bfd4b0, #f0f0f0);;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    background: #c2e1aa;
+    display: table;
+    width: 100%;
+    height: 100%;
+    clear: both;
+    content: '';
+}
+        .menu {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+}
+        .menu img{
+            width: 100px;
+            height: 80px;
+            float: left;
+            padding: 10px;
+        }
+        .logo{
+            padding: 20px 20px;
+            height: 15xp;
+            width: 15px;
+}
+nav{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;       
+}
+nav ul {
+    float: right;
+    margin-right: 25px;
+}
+nav ul li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 15px;
+            
+}
+nav ul li a {
+            position: relative;
+            color: black;
+            font-size: 22px;
+            text-transform: uppercase;
+            text-decoration: none;  
+
+}
+nav ul li a:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: black;
+    transform: scale(0);
+
+}
+nav ul li a:hover:before {
+    transform: scale(1);
+}
+@media (max-width: 1000px) {
+    .menu img{
+        left: 6%;
+    }
+} 
+
+/*                         del index solamente                  */
+
+.infoGeneral{
+    font-size: 22px;    
+}
+.infoGeneral p {
+    text-align: center;
+    margin: 20px 40px;
+}
+div .imagenesIndex {
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+    padding: 10px;
+    margin: 5px 5px;
+    align-content: center;
+    justify-content: space-around;
+}
+
+
+div .imagenesIndex img {
+    width: 600px;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+/* NOSOTROS */
+
+.nosotrosBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;  
+}
+@media (max-width: 1000px) {
+    .nosotrosBox {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+}}
+parrafoNosotros {
+    padding: 10px;
+    font-size: 22px;
+    margin: 10px 20px;
+}
+.imgNosotros img {
+    width: 400px;
+    margin: 10px 20px;
+}
+
+/*                                  PRODUCTOS                       */    
+
+
+.tituloGenerico {
+    /* background-color: #b3aeae; */
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.contenedorProductos {
+    background-image: linear-gradient(to bottom, #bfd4b0, #f0f0f0);
+    padding: 20px;
+    margin: auto;
+}
+.contenedorProductos .card {
+    height: 100%;
+    background-color: rgb(213, 212, 152);
+}
+.contenedorProductos .card-img-top {
+    object-fit: scale-down;
+    height: 350px;
+}
+
+
+
+/*.contenedorProductos {
+    background-color: #b7b2b2;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 10px;
+}
+.productos img {
+    width: 200px;
+    height: 240px;
+    border-radius: 25px;
+}
+.productos {
+    width: 60px;
+    height: 60px;
+    border: solid 3px black;
+    text-align: center;
+    text-align: 60px; 
+    margin: 10px;
+}
+.productos p {
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+} */
+
+
+
+/*                              GALERIA                        */
+
+/* img{
+    width: 100%;
+}
+
+.contenedorGaleria {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 13px 10px;
+    align-items: space-around;
+    
+}
+.imagenesGaleria {
+    flex: 50%;
+    padding: 5px;
+}
+
+.imagenesGaleria img {
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 5px;
+}
+#imagenSola img {
+    width: 50%;
+} */ /* utilizado solo para dejar como el resto, o bien subire otra foto o la podria sacar. Aproveche el uso del ID  */
+
+
+.carouselContainer{
+    margin: 10px auto;
+    width: 90%;
+    max-width: 900px;
+    padding: 10px;
+    filter: brightness(80%);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 2); 
+}
+.carouselMedidas img{
+    height: 500px
+    
+}
+
+.carouselMedidas1 img{
+    height: 600px
+    
+}
+
+
+/*                                     CONTACTO                    */
+
+h1 {
+    text-transform: uppercase;
+}
+h2 {
+    text-decoration: none;
+}
+
+.contactoyFormulario {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-bottom: 20px;
+    justify-content: space-around;
+    
+}
+.cajasContacto {
+    background-color: rgb(154, 147, 147);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 10px; 
+}
+@media (max-width: 1200px){
+    .contactoyFormulario{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+
+/*                                   FOOTER CSS                   */
+
+.piePagina{
+    width: 100%;
+    background-color: rgb(205, 149, 183);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+}
+.caja{
+    width: 90%;
+    max-width: 1200px;
+    margin: 10px;
+    display: grid;
+}
+.caja2{
+    width: 90%;
+    max-width: 1200px;
+    margin: 10px;
+    display: grid;
+    
+}
+.caja3{
+    width: 90%;
+    max-width: 1200px;
+    margin: 10px;
+    display: grid;
+}
+.piePagina .caja h2 {
+    font-size: 20px;
+} 
+.piePagina .caja h3{
+    font-size: 17px;
+}
+.piePagina .caja p {
+    font-size: 12px;
+}
+
