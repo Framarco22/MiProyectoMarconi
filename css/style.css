@@ -110,25 +110,69 @@ div .imagenesIndex img {
     padding: 5px;
 }
 
+@media (min-width: 320px){
+    .infoGeneral {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .imagenesIndex{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .imagenesIndex img{
+        max-width: 90%;
+        margin: 15px 0;
+    }
+}
+@media (min-width: 1024px){
+    .infoGeneral {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .imagenesIndex img{
+        max-width: 90%;
+        margin: 15px 0;
+        justify-items: center;
+    }
+}
+
 /* NOSOTROS */
 
-.nosotrosBox {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    width: 90%;
-    text-align: center;
-    align-items: center;
-    margin: 10px;
-    padding: 10px;  
-}
-@media (max-width: 1000px) {
+@media (min-width: 320px){
     .nosotrosBox {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-}}
-parrafoNosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 950%;
+    }
+    .parrafoNosotros{
+        max-width: 95%;
+        
+    }
+    .imgNosotros{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+    .imgNosotros img{
+        max-width: 90%;
+        margin: 15px 0;
+        
+    }
+}
+@media (min-width: 1024px){
+    .nosotrosBox {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .imgNosotros img{
+        max-width: 90%;
+        margin: 15px 0;
+        align-content: center;
+    }
+}
+.parrafoNosotros {
     padding: 10px;
     font-size: 22px;
     margin: 10px 20px;
@@ -142,7 +186,6 @@ parrafoNosotros {
 
 
 .tituloGenerico {
-    /* background-color: #b3aeae; */
     width: 100%;
     text-align: center;
     font-weight: bold;
@@ -164,63 +207,7 @@ parrafoNosotros {
 }
 
 
-
-/*.contenedorProductos {
-    background-color: #b7b2b2;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 50px 10px;
-}
-.productos img {
-    width: 200px;
-    height: 240px;
-    border-radius: 25px;
-}
-.productos {
-    width: 60px;
-    height: 60px;
-    border: solid 3px black;
-    text-align: center;
-    text-align: 60px; 
-    margin: 10px;
-}
-.productos p {
-    text-align: center;
-    font-size: 10px;
-    font-weight: bold;
-} */
-
-
-
 /*                              GALERIA                        */
-
-/* img{
-    width: 100%;
-}
-
-.contenedorGaleria {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 13px 10px;
-    align-items: space-around;
-    
-}
-.imagenesGaleria {
-    flex: 50%;
-    padding: 5px;
-}
-
-.imagenesGaleria img {
-    border: 2px solid black;
-    border-radius: 30px;
-    padding: 5px;
-}
-#imagenSola img {
-    width: 50%;
-} */ /* utilizado solo para dejar como el resto, o bien subire otra foto o la podria sacar. Aproveche el uso del ID  */
-
 
 .carouselContainer{
     margin: 10px auto;
@@ -232,12 +219,10 @@ parrafoNosotros {
 }
 .carouselMedidas img{
     height: 500px
-    
 }
 
 .carouselMedidas1 img{
     height: 600px
-    
 }
 
 
