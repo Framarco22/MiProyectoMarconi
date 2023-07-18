@@ -1,4 +1,5 @@
 /*                            NAVEGADOR CSS                     */
+
 *{
     margin: 0;
     padding: 0;
@@ -101,15 +102,12 @@ div .imagenesIndex {
     align-content: center;
     justify-content: space-around;
 }
-
-
 div .imagenesIndex img {
     width: 600px;
     border: 2px solid black;
     border-radius: 30px;
     padding: 5px;
 }
-
 @media (min-width: 320px){
     .infoGeneral {
         display: grid;
@@ -191,7 +189,6 @@ div .imagenesIndex img {
     font-weight: bold;
     font-size: 35px;
 }
-
 .contenedorProductos {
     background-image: linear-gradient(to bottom, #bfd4b0, #f0f0f0);
     padding: 20px;
@@ -206,7 +203,6 @@ div .imagenesIndex img {
     height: 350px;
 }
 
-
 /*                              GALERIA                        */
 
 .carouselContainer{
@@ -220,11 +216,9 @@ div .imagenesIndex img {
 .carouselMedidas img{
     height: 500px
 }
-
 .carouselMedidas1 img{
     height: 600px
 }
-
 
 /*                                     CONTACTO                    */
 
@@ -234,7 +228,6 @@ h1 {
 h2 {
     text-decoration: none;
 }
-
 .contactoyFormulario {
     display: flex;
     flex-direction: row;
@@ -271,7 +264,6 @@ h2 {
     flex-direction: row;
     flex-wrap: nowrap;
 }
-
 
 /*                                   FOOTER CSS                   */
 
@@ -314,4 +306,3 @@ h2 {
 .piePagina .caja p {
     font-size: 12px;
 }
-
