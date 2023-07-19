@@ -1,0 +1,338 @@
+/*                            NAVEGADOR CSS                     */
+nav ul li a {
+  position: relative;
+  color: black;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav ul li a:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: black;
+  transform: scale(0);
+}
+
+nav ul li a:hover:before {
+  transform: scale(1);
+}
+
+.infoGeneral {
+  font-size: 22px;
+}
+
+.infoGeneral p {
+  text-align: center;
+  margin: 20px 40px;
+}
+
+div .imagenesIndex {
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+  padding: 10px;
+  margin: 5px 5px;
+  align-content: center;
+  justify-content: space-around;
+}
+
+div .imagenesIndex img {
+  width: 600px;
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 5px;
+}
+
+@media (min-width: 320px) {
+  .infoGeneral {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .imagenesIndex {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .imagenesIndex img {
+    max-width: 90%;
+    margin: 15px 0;
+  }
+}
+@media (min-width: 1024px) {
+  .infoGeneral {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .imagenesIndex img {
+    max-width: 90%;
+    margin: 15px 0;
+    justify-items: center;
+  }
+}
+@media (min-width: 320px) {
+  .nosotrosBox {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 95%;
+  }
+  .parrafoNosotros {
+    max-width: 95%;
+  }
+  .imgNosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+  .imgNosotros img {
+    max-width: 90%;
+    margin: 15px 0;
+  }
+}
+@media (min-width: 1024px) {
+  .nosotrosBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .imgNosotros img {
+    max-width: 90%;
+    margin: 15px 0;
+    align-content: center;
+  }
+}
+.parrafoNosotros {
+  padding: 10px;
+  font-size: 22px;
+  margin: 10px 20px;
+}
+
+.imgNosotros img {
+  width: 400px;
+  margin: 10px 20px;
+}
+
+.tituloGenerico {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.contenedorProductos {
+  background-image: linear-gradient(to bottom, #bfd4b0, #f0f0f0);
+  padding: 20px;
+  margin: auto;
+}
+
+.contenedorProductos .card {
+  height: 100%;
+  background-color: rgb(213, 212, 152);
+}
+
+.contenedorProductos .card-img-top {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  height: 350px;
+}
+
+.carouselContainer {
+  margin: 10px auto;
+  width: 90%;
+  max-width: 900px;
+  padding: 10px;
+  filter: brightness(80%);
+  box-shadow: 0px 0px 40px rgb(0, 0, 0);
+}
+
+/* .carouselMedidas img{
+    height: 500px
+}
+.carouselMedidas1 img{
+    height: 600px
+} */
+h1 {
+  text-transform: uppercase;
+  max-width: 100%;
+  word-break: break-word;
+}
+
+h2 {
+  text-decoration: none;
+}
+
+.contactoyFormulario {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 620px;
+  margin: auto;
+}
+
+.cajasContacto, .cajaMapa {
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 10px;
+}
+
+.cajasContacto {
+  width: 100%;
+  background-color: rgb(201, 211, 215);
+}
+
+.cajaMapa {
+  width: 100%;
+}
+
+@media screen and (min-width: 1070px) and (max-width: 1440px) {
+  .cajasContacto, .cajaMapa {
+    width: 45%;
+  }
+  .contactoyFormulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+  }
+}
+.piePagina {
+  width: 100%;
+  background-color: rgb(205, 149, 183);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+}
+
+.caja {
+  width: 90%;
+  max-width: 1200px;
+  margin: 10px;
+  display: grid;
+}
+
+.caja2 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 10px;
+  display: grid;
+}
+
+.caja3 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 10px;
+  display: grid;
+}
+
+.piePagina .caja h2 {
+  font-size: 20px;
+}
+
+.piePagina .caja h3 {
+  font-size: 17px;
+}
+
+.piePagina .caja p {
+  font-size: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #bfd4b0, #f0f0f0);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  background: #c2e1aa;
+  display: table;
+  width: 100%;
+  height: 100%;
+  clear: both;
+  content: "";
+}
+
+.menu {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu img {
+  width: 100px;
+  height: 80px;
+  padding: 10px;
+}
+
+.logo {
+  padding: 20px 20px;
+  height: 15xp;
+  width: 15px;
+  justify-content: left;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  float: right;
+  margin-right: 25px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  position: relative;
+  color: black;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav ul li a:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: black;
+  transform: scale(0);
+}
+
+nav ul li a:hover:before {
+  transform: scale(1);
+}
+
+@media (max-width: 1000px) {
+  .menu img {
+    left: 6%;
+  }
+}/*# sourceMappingURL=main.css.map */

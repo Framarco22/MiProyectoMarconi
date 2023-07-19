@@ -1,0 +1,42 @@
+@media (min-width: 320px){
+    .nosotrosBox {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 95%;
+    }
+    .parrafoNosotros{
+        max-width: 95%;
+        
+    }
+    .imgNosotros{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+    .imgNosotros img{
+        max-width: 90%;
+        margin: 15px 0;
+        
+    }
+}
+@media (min-width: 1024px){
+    .nosotrosBox {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .imgNosotros img{
+        max-width: 90%;
+        margin: 15px 0;
+        align-content: center;
+    }
+}
+.parrafoNosotros {
+    padding: 10px;
+    font-size: 22px;
+    margin: 10px 20px;
+}
+.imgNosotros img {
+    width: 400px;
+    margin: 10px 20px;
+}

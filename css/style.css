@@ -5,9 +5,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+h1{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
 body{
     background-image: linear-gradient(to bottom, #bfd4b0, #f0f0f0);;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+}
+.anchoPagina {
+    min-width: 400px;
 }
 a{
     text-decoration: none;
@@ -80,7 +88,7 @@ div .imagenesIndex img {
     .nosotrosBox {
         display: grid;
         grid-template-columns: 1fr;
-        max-width: 950%;
+        max-width: 95%;
     }
     .parrafoNosotros{
         max-width: 95%;
@@ -146,62 +154,58 @@ div .imagenesIndex img {
 
 .carouselContainer{
     margin: 10px auto;
-    width: 90%;
-    max-width: 900px;
+    width: 75%;
     padding: 10px;
     filter: brightness(80%);
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 2); 
 }
-.carouselMedidas img{
-    height: 500px
-}
-.carouselMedidas1 img{
-    height: 600px
-}
+
 
 /*                                     CONTACTO                    */
 
 h1 {
+    
     text-transform: uppercase;
+    max-width: 100%;
+    word-break: break-word;
 }
 h2 {
     text-decoration: none;
 }
+
 .contactoyFormulario {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding-bottom: 20px;
-    justify-content: space-around;
-    
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 620px;
+    margin: auto;
 }
+
+.cajasContacto, .cajaMapa {
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 10px;
+}
+
 .cajasContacto {
-    background-color: rgb(154, 147, 147);
-    display: flex;
-    max-width: 450px;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    margin: 10px;
-    padding: 10px; 
+    width: 100%;
+    background-color: rgb(201, 211, 215);
 }
-@media (max-width: 1000px){
-    .contactoyFormulario{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-}
+
 .cajaMapa {
-    padding: 10px;
-    margin: 10px;
-    width: 90%;
-    max-width: 500px;
-    justify-content: space-around;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    width: 100%;
+}
+
+@media screen and (min-width: 1070px) and (max-width: 1440px) {
+    .cajasContacto, .cajaMapa {
+        width: 45%;
+    }
+    .contactoyFormulario {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 100%;
+    }
 }
 
 /*                                   FOOTER CSS                   */

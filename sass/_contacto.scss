@@ -1,0 +1,44 @@
+h1 {
+    
+    text-transform: uppercase;
+    max-width: 100%;
+    word-break: break-word;
+}
+h2 {
+    text-decoration: none;
+}
+
+.contactoyFormulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 620px;
+    margin: auto;
+}
+
+.cajasContacto, .cajaMapa {
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 10px;
+}
+
+.cajasContacto {
+    width: 100%;
+    background-color: rgb(201, 211, 215);
+}
+
+.cajaMapa {
+    width: 100%;
+}
+
+@media screen and (min-width: 1070px) and (max-width: 1440px) {
+    .cajasContacto, .cajaMapa {
+        width: 45%;
+    }
+    .contactoyFormulario {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 100%;
+    }
+}

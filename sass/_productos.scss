@@ -1,0 +1,19 @@
+.tituloGenerico {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+}
+.contenedorProductos {
+    background-image: linear-gradient(to bottom, #bfd4b0, #f0f0f0);
+    padding: 20px;
+    margin: auto;
+}
+.contenedorProductos .card {
+    height: 100%;
+    background-color: rgb(213, 212, 152);
+}
+.contenedorProductos .card-img-top {
+    object-fit: scale-down;
+    height: 350px;
+}
