@@ -12,9 +12,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+h1{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
 body{
     background-image: linear-gradient(to bottom, #bfd4b0, #f0f0f0);;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+}
+.anchoPagina {
+    min-width: 400px;
 }
 a{
     text-decoration: none;
@@ -28,65 +36,3 @@ header{
     clear: both;
     content: '';
 }
-        .menu {
-            width: 100%;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-around
-}
-        .menu img{
-            width: 100px;
-            height: 80px;
-            
-            padding: 10px;
-        }
-        .logo{
-            padding: 20px 20px;
-            height: 15xp;
-            width: 15px;
-            justify-content: left;
-}
-nav{
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            flex-wrap: wrap;       
-}
-nav ul {
-    float: right;
-    margin-right: 25px;
-}
-nav ul li {
-            display: inline-block;
-            line-height: 80px;
-            margin: 0 15px;
-            
-}
-nav ul li a {
-            position: relative;
-            color: black;
-            font-size: 22px;
-            text-transform: uppercase;
-            text-decoration: none;  
-
-}
-nav ul li a:before {
-    position: absolute;
-    content: '';
-    left: 0;
-    bottom: 0;
-    height: 3px;
-    width: 100%;
-    background: black;
-    transform: scale(0);
-
-}
-nav ul li a:hover:before {
-    transform: scale(1);
-}
-@media (max-width: 1000px) {
-    .menu img{
-        left: 6%;
-    }
-} 
