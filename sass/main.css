@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*                            NAVEGADOR CSS                     */
 nav ul li a {
   position: relative;
@@ -257,7 +256,7 @@ h1 {
 
 @media (min-width: 275px) and (max-width: 500px) {
   .carouselContainer {
-    max-width: 70%; /* Reducir el tamaño al 70% */
+    max-width: 70%;
     margin: 15px auto;
   }
   .carouselMedidas1 {
