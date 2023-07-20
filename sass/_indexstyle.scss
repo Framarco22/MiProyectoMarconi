@@ -1,48 +1,103 @@
-.infoGeneral{
-    font-size: 22px;    
-}
-.infoGeneral p {
-    text-align: center;
-    margin: 20px 40px;
-}
-div .imagenesIndex {
+.infoGeneral {
     display: flex;
-    flex-flow: wrap;
-    flex-direction: row;
+    flex: 1; 
+    padding-right: 20px;
+    font-size: 22px;
+}
+
+div .infoGeneral h1 {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+.imagenesIndex {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
     padding: 10px;
     margin: 5px 5px;
     align-content: center;
-    justify-content: space-around;
 }
-div .imagenesIndex img {
-    width: 600px;
+
+.imagenesIndex img {
+    margin-top: 10px;
+    width: 80%; 
+    max-height: auto;
     border: 2px solid black;
     border-radius: 30px;
     padding: 5px;
 }
-@media (min-width: 320px){
-    .infoGeneral {
-        display: grid;
-        grid-template-columns: 1fr;
+
+.infoGeneral p {
+    text-align: center;
+    margin: 20px 40px;
+}
+
+@media (min-width: 275px) and (max-width: 500px) {
+    .bloqueInicio .infoGeneral  {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    .imagenesIndex{
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
+
+    .infoGeneral h1 {
+      order: 1;
     }
-    .imagenesIndex img{
-        max-width: 90%;
-        margin: 15px 0;
+    .infoGeneral p {
+        order: 2;
+      }
+
+    .imagenesIndex {
+        height: auto;
+        margin-top: 10px;
     }
 }
-@media (min-width: 1024px){
-    .infoGeneral {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+
+@media (min-width: 500px) and (max-width: 990px) {
+    .bloqueInicio .infoGeneral  {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    .imagenesIndex img{
-        max-width: 90%;
-        margin: 15px 0;
-        justify-items: center;
+
+    .infoGeneral h1 {
+      order: 1;
+    }
+    .infoGeneral p {
+        order: 2;
+      }
+
+    .imagenesIndex {
+        height: auto;
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 990px) and (max-width: 1600px) {
+    
+    .bloqueInicio .infoGeneral  {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .infoGeneral h1 {
+      order: 1;
+    }
+    .infoGeneral p {
+        order: 2;
+      }
+
+    .imagenesIndex {
+        height: auto;
+        margin-top: 10px;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .imagenesIndex img {
+        width: 50%;
+        height: 300px;
     }
 }

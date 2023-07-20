@@ -4,16 +4,33 @@
     font-weight: bold;
     font-size: 35px;
 }
+.tituloGenerico h1 {
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
 .contenedorProductos {
-    background-image: linear-gradient(to bottom, #bfd4b0, #f0f0f0);
+    background-image: linear-gradient(to bottom, #bfd4b0, rgb(205, 149, 183));
     padding: 20px;
     margin: auto;
 }
 .contenedorProductos .card {
     height: 100%;
-    background-color: rgb(213, 212, 152);
+    background-color: rgb(235, 245, 231);
+    border-radius: 20px;
 }
 .contenedorProductos .card-img-top {
     object-fit: scale-down;
-    height: 350px;
+    max-height: 350px;
+    max-width: auto;
+}
+.card img {
+   /*  margin-left: 20px; */
+   /*  border: 2px solid black; */
+    border-radius: 60px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 89px;
+    padding: 41px;
+    width: auto;
+    height: auto;
 }

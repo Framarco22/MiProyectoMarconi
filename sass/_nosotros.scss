@@ -1,10 +1,42 @@
+
+.nosotrosBox {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center; 
+    text-align: left;
+}
+
+.textoNosotros {
+    grid-column: 1 / span 1;
+    text-align: center;
+}
+.textoNosotros h1 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+
+.imgNosotros {
+    grid-column: 2 / span 1;
+    padding: 10px;
+    margin: 5px 5px;
+    text-align: center;
+}
+.imgNosotros img {
+    margin-left: 20px;
+    width: 600px;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 5px;
+}
+
 @media (min-width: 320px){
     .nosotrosBox {
         display: grid;
-        grid-template-columns: 1fr;
+        
         max-width: 95%;
     }
-    .parrafoNosotros{
+    .textoNosotros{
         max-width: 95%;
         
     }
@@ -23,7 +55,7 @@
 @media (min-width: 1024px){
     .nosotrosBox {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        
     }
     .imgNosotros img{
         max-width: 90%;
@@ -31,7 +63,7 @@
         align-content: center;
     }
 }
-.parrafoNosotros {
+.textoNosotros {
     padding: 10px;
     font-size: 22px;
     margin: 10px 20px;
