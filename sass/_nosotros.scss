@@ -15,7 +15,6 @@
     padding-bottom: 20px;
 }
 
-
 .imgNosotros {
     grid-column: 2 / span 1;
     padding: 10px;
@@ -29,8 +28,25 @@
     border-radius: 30px;
     padding: 5px;
 }
+@media (min-width: 275px) and (max-width: 500px) {
+    .bloqueInicio .infoGeneral  {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-@media (min-width: 320px){
+    .textoNosotros h1 {
+        order: 1;
+    }
+    .textoNosotros p {
+        order: 2;
+    }
+    .imgNosotros {
+        height: auto;
+        margin-top: 10px;
+    }
+}
+/* @media (min-width: 320px){
     .nosotrosBox {
         display: grid;
         
@@ -51,7 +67,7 @@
         margin: 15px 0;
         
     }
-}
+} */
 @media (min-width: 1024px){
     .nosotrosBox {
         display: grid;
