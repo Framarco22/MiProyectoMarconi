@@ -25,40 +25,62 @@ h1 {
     }
 
     .carouselMedidas1  {
-        max-height: 300px;
-        height: auto;
+        height: 280px;
 
     }
     .carouselMedidas {
-        height: auto;
+        height: 200px;
 
     }
     .carouselMedidas img{
-        height: auto;
+        height: 100%;
         width: auto;
     }
     .carouselMedidas1 img{
-        height: auto;
+        height: 100%;
         width: auto;
 }}
 @media (min-width: 500px) and (max-width: 990px) {
     .carouselContainer {
         max-width: 70%; 
         margin: 15px auto;
+    }
 
     .carouselMedidas1  {
-        max-height: 600px;
-        height: auto;
+        height: 400px;
+
     }
     .carouselMedidas {
-        height: auto;
+        height: 270px;
 
     }
     .carouselMedidas img{
-        height: auto;
+        height: 100%;
         width: auto;
     }
     .carouselMedidas1 img{
-        height: auto;
+        height: 100%;
         width: auto;}
-}}
+    }
+    @media (min-width: 990px) and (max-width: 1660px) {
+        .carouselContainer {
+            max-width: 70%; 
+            margin: 15px auto;
+        }
+    
+        .carouselMedidas1  {
+            height: 900px;
+    
+        }
+        .carouselMedidas {
+            height: 500px;
+    
+        }
+        .carouselMedidas img{
+            height: 100%;
+            width: auto;
+        }
+        .carouselMedidas1 img{
+            height: 100%;
+            width: auto;}
+        }

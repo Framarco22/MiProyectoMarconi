@@ -1,90 +1,77 @@
-
 .nosotrosBox {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    align-items: center; 
-    text-align: left;
-}
-
-.textoNosotros {
+    /* grid-template-columns: 1fr; */
+    align-items: center;
+    text-align: center; 
+  }
+  
+  .textoNosotros {
     grid-column: 1 / span 1;
-    text-align: center;
-}
-.textoNosotros h1 {
+  }
+  
+  .textoNosotros h1 {
     padding-top: 10px;
     padding-bottom: 20px;
-}
-
-.imgNosotros {
-    grid-column: 2 / span 1;
+  }
+  
+  .imgNosotros {
+    grid-column: 2 / span 1; 
     padding: 10px;
     margin: 5px 5px;
     text-align: center;
-}
-.imgNosotros img {
-    margin-left: 20px;
-    width: 600px;
+  }
+  
+  .imgNosotros img {
+    max-width: 100%; 
     border: 2px solid black;
     border-radius: 30px;
     padding: 5px;
-}
-@media (min-width: 275px) and (max-width: 500px) {
-    .bloqueInicio .infoGeneral  {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .textoNosotros h1 {
-        order: 1;
-    }
-    .textoNosotros p {
-        order: 2;
-    }
+  }
+  
+  @media screen and (min-width: 320px) and (max-width: 500px) {
     .imgNosotros {
-        height: auto;
-        margin-top: 10px;
+      order: 2; 
+      margin-top: 20px;
+      grid-column: 1 / span 1; 
     }
+  }
+
+  @media (min-width: 500px) and (max-width: 990px) {
+    .imgNosotros {
+        order: 2; 
+        margin-top: 20px;
+        grid-column: 1 / span 1;  
+      }
 }
-/* @media (min-width: 320px){
+@media (min-width: 990px) and (max-width: 1600px) {
     .nosotrosBox {
-        display: grid;
+      grid-template-columns: 1fr 2fr;
+      text-align: center;
+      grid-column: 2 / span 1; 
+      padding: 5px;
+    }
+  
+    .textoNosotros h1 {
+      order: 1;
+      padding: 5px;
+    
+    }
+  
+    .textoNosotros p {
+      order: 2;
+      padding: 5px;
+
+    
+    }
+  
+    .imgNosotros {
         
-        max-width: 95%;
+      margin-top: 10px;
+      text-align: center;
     }
-    .textoNosotros{
-        max-width: 95%;
-        
+  
+    .imagenesIndex img {
+      width: 100%;
+      height: auto; 
     }
-    .imgNosotros{
-        display: grid;
-        grid-template-columns: 1fr;
-        align-items: center;
-        justify-items: center;
-    }
-    .imgNosotros img{
-        max-width: 90%;
-        margin: 15px 0;
-        
-    }
-} */
-@media (min-width: 1024px){
-    .nosotrosBox {
-        display: grid;
-        
-    }
-    .imgNosotros img{
-        max-width: 90%;
-        margin: 15px 0;
-        align-content: center;
-    }
-}
-.textoNosotros {
-    padding: 10px;
-    font-size: 22px;
-    margin: 10px 20px;
-}
-.imgNosotros img {
-    width: 400px;
-    margin: 10px 20px;
-}
+  }
