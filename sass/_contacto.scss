@@ -42,9 +42,7 @@ h2 {
 .cajaMapa iframe {
     margin: 15px
 }
-@media screen and (min-width: 990px) and (max-width: 1880px) {
-
-    }
+@media screen and (min-width: 275px) and (max-width: 990px) {
     .contactoyFormulario {
         display: flex;
         flex-wrap: wrap;
@@ -54,8 +52,26 @@ h2 {
         max-width: auto;
         width: 90%;
     }
-
+    .contactoyFormulario {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 100%;
+    }
+    textarea {
+      max-width: 200px;
+    }
+  }
 @media screen and (min-width: 990px) and (max-width: 1880px) {
+    .contactoyFormulario {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 80%;
+        max-height: auto;
+        max-width: auto;
+        width: 90%;
+    }
     .cajasContacto, .cajaMapa {
         width: 45%;
     }
