@@ -1,5 +1,9 @@
 # MiProyectoMarconi
 
-Primer uso de GitHub, Estuve tratando de hacer responsivo el nav con flex pero no pude. Me interesaria poder hacerlo yo mismo mas que nada por la experiencia.
+Entrega final, me quedaron algunas ideas que por cuestiones de tiempo; no pude profundizar.
 
-Tengo un error en la pagina de contacto, el navegador no se comporta tal y como lo hace en el resto de paginas, entiendo q sera por el comportamiento del formulario y el mapa.
+De todas maneras, me encuentro bastante satisfecho; espero que puedan darme sugerencias o ideas de como seguir mejorando ya sea la parte estetica, como la experiencia del usuario. La pagina esta en gitpage.com
+
+Espero este a la altura de la consigna y sin mas que decir espero su devolucion. 
+
+Muchas gracias.
