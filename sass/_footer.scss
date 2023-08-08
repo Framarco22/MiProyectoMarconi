@@ -1,5 +1,16 @@
-.piePagina{
+footer{
+    font-family: 'Montserrat', sans-serif;
     width: 100%;
+    min-height: 50px;
+    font-size: 12px;
+}
+footer h2{
+
+}
+redSocial {
+    
+}
+.piePagina{
     background-color: rgb(205, 149, 183);
     display: flex;
     flex-direction: row;
@@ -7,19 +18,20 @@
     text-align: center;
     justify-content: space-between;
     align-items: center;
-    height: 200px;
 }
 .caja{
     width: 90%;
     max-width: 1200px;
     margin: 10px;
     display: grid;
+    font-size: 12px;
 }
 .caja2{
     width: 90%;
     max-width: 1200px;
     margin: 10px;
     display: grid;
+    font-size: 12px;
     
 }
 .caja3{
@@ -27,6 +39,7 @@
     max-width: 1200px;
     margin: 10px;
     display: grid;
+    font-size: 12px;
 }
 .piePagina .caja h2 {
     font-size: 20px;

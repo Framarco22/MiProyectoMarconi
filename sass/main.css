@@ -1,4 +1,8 @@
 /*                            NAVEGADOR CSS                     */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 nav ul li a {
   position: relative;
   color: black;
@@ -20,6 +24,10 @@ nav ul li a:before {
 
 nav ul li a:hover:before {
   transform: scale(1);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
 .infoGeneral {
@@ -58,7 +66,7 @@ div .infoGeneral h1 {
   margin: 20px 40px;
 }
 
-@media (min-width: 275px) and (max-width: 500px) {
+@media (max-width: 500px) {
   .bloqueInicio .infoGeneral {
     display: flex;
     flex-direction: column;
@@ -90,9 +98,10 @@ div .infoGeneral h1 {
   .imagenesIndex {
     height: auto;
     margin-top: 10px;
+    margin: 7px;
   }
 }
-@media (min-width: 990px) and (max-width: 1600px) {
+@media (min-width: 990px) and (max-width: 1880px) {
   .bloqueInicio .infoGeneral {
     display: flex;
     flex-direction: column;
@@ -113,8 +122,37 @@ div .infoGeneral h1 {
   .imagenesIndex img {
     width: 50%;
     height: 300px;
+    margin: 10px;
   }
 }
+@media (min-width: 1880px) and (max-width: 2400px) {
+  .bloqueInicio .infoGeneral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .infoGeneral h1 {
+    order: 1;
+  }
+  .infoGeneral p {
+    order: 2;
+  }
+  .imagenesIndex {
+    height: auto;
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .imagenesIndex img {
+    width: 50%;
+    height: 600px;
+    margin: 10px;
+  }
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 .nosotrosBox {
   display: grid;
   /* grid-template-columns: 1fr; */
@@ -145,7 +183,7 @@ div .infoGeneral h1 {
   padding: 5px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media (max-width: 500px) {
   .imgNosotros {
     order: 2;
     margin-top: 20px;
@@ -183,6 +221,10 @@ div .infoGeneral h1 {
     height: auto;
   }
 }
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 .tituloGenerico {
   width: 100%;
   text-align: center;
@@ -226,6 +268,10 @@ div .infoGeneral h1 {
   height: auto;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 h1 {
   padding-top: 25px;
   padding-bottom: 20px;
@@ -250,7 +296,7 @@ h1 {
   width: auto;
 }
 
-@media (min-width: 275px) and (max-width: 500px) {
+@media (max-width: 500px) {
   .carouselContainer {
     max-width: 70%;
     margin: 15px auto;
@@ -310,6 +356,10 @@ h1 {
     width: auto;
   }
 }
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 h1 {
   text-transform: uppercase;
   max-width: 100%;
@@ -328,20 +378,30 @@ h2 {
   margin: auto;
 }
 
-.cajasContacto, .cajaMapa {
+.cajasContacto,
+.cajaMapa {
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 30px;
+  width: 90%;
+}
+
+.cajasContacto {
+  background-color: rgb(201, 211, 215);
   box-sizing: border-box;
   padding: 20px;
   margin: 10px;
   border-radius: 30px;
 }
 
-.cajasContacto {
-  width: 90%;
-  background-color: rgb(201, 211, 215);
+.cajasContacto form {
+  max-width: 400px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .cajasContacto h1 {
-  max-width: 100%;
   font-size: 25px;
   padding: 5px;
 }
@@ -351,31 +411,28 @@ h2 {
 }
 
 .cajaMapa {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
 }
 
 .cajaMapa iframe {
+  max-width: 100%;
+  max-height: 100%;
   margin: 15px;
 }
 
-@media screen and (min-width: 275px) and (max-width: 990px) {
-  .contactoyFormulario {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 80%;
-    max-height: auto;
-    max-width: auto;
-    width: 90%;
-  }
-  .contactoyFormulario {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 100%;
-  }
-  textarea {
-    max-width: 200px;
+textarea {
+  max-width: 200px;
+  resize: vertical;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .cajasContacto form {
+    max-width: 97%;
   }
 }
 @media screen and (min-width: 990px) and (max-width: 1880px) {
@@ -383,19 +440,27 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 80%;
-    max-height: auto;
-    max-width: auto;
-    width: 90%;
+    max-width: 90%;
   }
-  .cajasContacto, .cajaMapa {
+  .cajasContacto,
+  .cajaMapa {
     width: 45%;
+    margin: 5px;
   }
-  .contactoyFormulario {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 100%;
+  .cajasContacto {
+    order: 1;
+    width: 40%;
+    margin: 30px 5px;
+    padding: 17px;
+  }
+  .cajaContacto form {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .cajaMapa {
+    order: 2;
+    width: 55%;
+    margin: 5px;
   }
 }
 input[type=text],
@@ -405,6 +470,7 @@ textarea {
   font-size: 12px;
   border: 1px solid #ccc;
   transition: all 0.3s ease;
+  width: 100%;
 }
 
 input[type=text]:focus,
@@ -416,8 +482,14 @@ textarea:focus {
   background-color: #95c29d;
 }
 
-.piePagina {
+footer {
+  font-family: "Montserrat", sans-serif;
   width: 100%;
+  min-height: 50px;
+  font-size: 12px;
+}
+
+.piePagina {
   background-color: rgb(205, 149, 183);
   display: flex;
   flex-direction: row;
@@ -425,7 +497,6 @@ textarea:focus {
   text-align: center;
   justify-content: space-between;
   align-items: center;
-  height: 200px;
 }
 
 .caja {
@@ -433,6 +504,7 @@ textarea:focus {
   max-width: 1200px;
   margin: 10px;
   display: grid;
+  font-size: 12px;
 }
 
 .caja2 {
@@ -440,6 +512,7 @@ textarea:focus {
   max-width: 1200px;
   margin: 10px;
   display: grid;
+  font-size: 12px;
 }
 
 .caja3 {
@@ -447,6 +520,7 @@ textarea:focus {
   max-width: 1200px;
   margin: 10px;
   display: grid;
+  font-size: 12px;
 }
 
 .piePagina .caja h2 {
@@ -475,7 +549,6 @@ h1 {
 
 body {
   background-image: linear-gradient(to bottom, #bfd4b0, rgb(205, 149, 183));
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .anchoPagina {

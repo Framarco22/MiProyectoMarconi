@@ -1,3 +1,6 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 h1 {
     padding-top: 25px;
     padding-bottom: 20px;
@@ -18,7 +21,7 @@ h1 {
     height: auto;
     width: auto;
 }
-@media (min-width: 275px) and (max-width: 500px) {
+@media (max-width: 500px) {
     .carouselContainer {
         max-width: 70%; 
         margin: 15px auto;
